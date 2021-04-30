@@ -18,6 +18,7 @@ public class Household extends JPanel {
 
     @Override
     public void paint(Graphics g) {
+        super.paint(g);
         //scenery
         g.setColor(Color.cyan);
         g.fillRect(0, 0, 900, 500);
