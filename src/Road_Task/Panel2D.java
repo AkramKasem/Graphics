@@ -127,6 +127,7 @@ public class Panel2D extends JPanel {
         g2d.setStroke(strok);
         g2d.draw(new Line2D.Double(10, 320, 1000, 320));
 
+       
 
         g.setColor(Color.green);
         g.fillOval(720, 250, 30, 40);
