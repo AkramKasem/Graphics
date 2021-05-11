@@ -7,6 +7,7 @@ package Rectangle;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.util.Random;
 import javax.swing.JFrame;
 
@@ -20,14 +21,19 @@ public class DrawPanel extends JFrame {
     public void paint(Graphics g) {
         super.paint(g);
 
-        g.setColor(Color.white);
-        g.fillRect(150, 170, 100, 100);
+        Graphics2D gd = (Graphics2D) g;
 
-        g.setColor(Color.white);
-        g.fillRect(250, 270, 200, 200);
+        gd.setColor(Color.red);
+        gd.fillRoundRect(150, 170, 100, 100, 50, 50);
 
-        g.setColor(Color.white);
-        g.fillRect(450, 470, 100, 100);
+        gd.setColor(Color.white);
+        gd.fillRoundRect(250, 270, 200, 200, 50, 50);
+
+        gd.setColor(Color.blue);
+        gd.fillOval(300, 320, 100, 100);
+
+        gd.setColor(Color.red);
+        gd.fillRoundRect(450, 470, 100, 100, 50, 50);
 
     }
 
